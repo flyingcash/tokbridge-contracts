@@ -18,6 +18,45 @@ And the contracts support four types of relay operations:
 
 ### Contracts
 
+* ELA-BSC Bridge
+
+    ```
+   ELA-ETH Bridge
+   [   Home  ] HomeBridge: 0x176512ad49A59b8AeEdD4DA2eA8cb697f27e04F1 at block 10913796
+   [   Home  ] HomeAMBridge Implementation:  0xd919B14e42bAD8682dbF7a31FD493e70b712B402
+
+   [ Foreign ] ForeignBridge: 0xFF4eAAe30b70DFd49EBf1705102D8059d304eE80 at block 15083809
+   [ Foreign ] BridgeValidators Implementation:  0x3e465A513900f88775A264F6d67341c920654245
+
+
+
+   ELA(Home)->BSC(Foreign) (Native To ERC20) 
+   [   Home  ] Bridge Mediator: 0x1135BB7CEc7980f0d65741Def1e8Ab054AB4d651
+   [   Home  ] Fee Manager: 0xA3fccE985EBEA066f5790E2857fA906e2f2b3b2E
+   [ Foreign ] Bridge Mediator: 0x6EA7481f1096E822574a54188578d1708F64C828
+   [ Foreign ] Fee Manager: 0x2BDdC56Abc88A63D4f1b26d6F327A5cfDae7192b
+   [ Foreign ] ERC677 Token: 0x76393bb8Fd7037962ebDB73f3B30F76DdE5CF718
+
+
+   BSC(Home)->ELA(Foreign) (Native To ERC20) 
+   [   Home  ] Bridge Mediator: 0x5a70075aC335c8e99BF8c27760dD1001190A8032
+   [   Home  ] Fee Manager: 0x1148114E759052d3f23be0dF3e6C1EeE8473666B
+   [ Foreign ] Bridge Mediator: 0x680424c82208DB896EdC78DD79a0a352468dd3DF
+   [ Foreign ] Fee Manager: 0xCdE122D79AE07CA39679eb977432947fbBd7a776
+   [ Foreign ] ERC677 Token: 0x51B85F3889c7EA8f6d5EdEBFBadaDA0fDcE236c9
+
+
+
+   ELA(Foreign)->BSC(Home) (Multi Amb ERC to ERC677)
+   [   BSC  ] Bridge Mediator: 0x4Ca8abd60D88a0C35071d535e26E1cB2928fC45C
+   [   ELA   ] Bridge Mediator: 0xfBeAFe09cC2C3B9A73A8bFDA46896D1302a90F0c
+
+
+   BSC(Foreign)->ELA(Home) (Multi Amb ERC to ERC677)
+   [   ELA   ] Bridge Mediator: 0x11262aB418C2d2926F5afb1e3D6e88d86B3C9017
+   [   BSC  ] Bridge Mediator: 0x3174937C38ba343faBAC64b51a9C91b3e261BBEd
+
+    ```
 * ELA-ETH Bridge
 
   * Mainnet
