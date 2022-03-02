@@ -18,6 +18,45 @@ And the contracts support four types of relay operations:
 
 ### Contracts
 
+* ELA-BSC Bridge
+
+    ```
+   ELA-ETH Bridge
+   [   Home  ] HomeBridge: 0x176512ad49A59b8AeEdD4DA2eA8cb697f27e04F1 at block 10913796
+   [   Home  ] HomeAMBridge Implementation:  0xd919B14e42bAD8682dbF7a31FD493e70b712B402
+
+   [ Foreign ] ForeignBridge: 0xFF4eAAe30b70DFd49EBf1705102D8059d304eE80 at block 15083809
+   [ Foreign ] BridgeValidators Implementation:  0x3e465A513900f88775A264F6d67341c920654245
+
+
+
+   ELA(Home)->BSC(Foreign) (Native To ERC20) 
+   [   Home  ] Bridge Mediator: 0x1135BB7CEc7980f0d65741Def1e8Ab054AB4d651
+   [   Home  ] Fee Manager: 0xA3fccE985EBEA066f5790E2857fA906e2f2b3b2E
+   [ Foreign ] Bridge Mediator: 0x6EA7481f1096E822574a54188578d1708F64C828
+   [ Foreign ] Fee Manager: 0x2BDdC56Abc88A63D4f1b26d6F327A5cfDae7192b
+   [ Foreign ] ERC677 Token: 0x76393bb8Fd7037962ebDB73f3B30F76DdE5CF718
+
+
+   BSC(Home)->ELA(Foreign) (Native To ERC20) 
+   [   Home  ] Bridge Mediator: 0x5a70075aC335c8e99BF8c27760dD1001190A8032
+   [   Home  ] Fee Manager: 0x1148114E759052d3f23be0dF3e6C1EeE8473666B
+   [ Foreign ] Bridge Mediator: 0x680424c82208DB896EdC78DD79a0a352468dd3DF
+   [ Foreign ] Fee Manager: 0xCdE122D79AE07CA39679eb977432947fbBd7a776
+   [ Foreign ] ERC677 Token: 0x51B85F3889c7EA8f6d5EdEBFBadaDA0fDcE236c9
+
+
+
+   ELA(Foreign)->BSC(Home) (Multi Amb ERC to ERC677)
+   [   BSC  ] Bridge Mediator: 0x4Ca8abd60D88a0C35071d535e26E1cB2928fC45C
+   [   ELA   ] Bridge Mediator: 0xfBeAFe09cC2C3B9A73A8bFDA46896D1302a90F0c
+
+
+   BSC(Foreign)->ELA(Home) (Multi Amb ERC to ERC677)
+   [   ELA   ] Bridge Mediator: 0x11262aB418C2d2926F5afb1e3D6e88d86B3C9017
+   [   BSC  ] Bridge Mediator: 0x3174937C38ba343faBAC64b51a9C91b3e261BBEd
+
+    ```
 * ELA-ETH Bridge
 
   * Mainnet
@@ -79,7 +118,37 @@ And the contracts support four types of relay operations:
     [ HSC ] Bridge Mediator: 0x323b5913dadd3e61e5242Fe44781cb7Dd4BE7EB8
     ```
 
+* Heco(Huobi)-Bsc Bridge
+  * Mainnet
+    ```
     
+    HSC-BSC Bridge
+    [   Home  ] HomeBridge: 0x5C121faedD17baD05E65E9F98c49b29B859ff3Fe at block 2935794
+    [ Foreign ] ForeignBridge: 0x4FA2EBF8aC682f30AAfaef1048C86DfD0887f1c8 at block 5665239
+
+
+    HSC->BSC (Native to ERC)
+    [   Home  ] Bridge Mediator: 0xac751979876BEeedF18cB65d1aC0d47FF8366500
+    [   Home  ] Fee Manager: 0x66185e70407b4CC06BC3f9E33F0498bB878B3b63
+    [ Foreign ] Bridge Mediator: 0xDd973cd01C7434965Eb14A864686566749bC027b
+    [ Foreign ] Fee Manager: 0xe22224e7E1E07e6ce33ecfE842cD7442fa432982
+    [ Foreign ] ERC677 Token: 0xad93dB5adEc663FC1D683A7982c621e217017cB2
+
+    BSC->HSC (Native to ERC)
+    [   Home  ] Bridge Mediator: 0xB3BD1624567F6e598061233760c868654c5c8495
+    [   Home  ] Fee Manager: 0xE3f9a6c6342D897A256Faa1723054e059263646C
+    [ Foreign ] Bridge Mediator: 0xA0fDd3e43a14205b8ef32C1dFca7EfAa2Bb1eD14
+    [ Foreign ] Fee Manager: 0x6EFF7a1d8B883de3CE664Fb871aF7f1EDa514D28
+    [ Foreign ] ERC677 Token: 0xE4645Eb46F1A512FAf03a6c45299CFf14cAc4FfD
+
+    HECO->BSC (ERC20 to ERC20)
+    [   Home - BSC  ] Bridge Mediator: 0x0054351c99288D37B96878EDC2319ca006c8B910
+    [ Foreign - HECO ] Bridge Mediator: 0x8Ca3C573a86230891A1BED63C00c928a9A355f0E
+
+    BSC->HECO (ERC20 to ERC20)
+    [   Home - HECO  ] Bridge Mediator: 0x4a3170Ee4d54c99267b7eF28Ceb205ea84e273dE
+    [ Foreign - BSC ] Bridge Mediator: 0xb00fABF1525463A71988c5Ecdda97C306c762d67
+    ```
 
 * Heco(Huobi)-ETH Bridge
 
